@@ -63,59 +63,83 @@ body
 }
 #navigation
 {
-    height: 100px;
     width: 80%;
     margin-left: 10%;
     margin-right: auto;
     display: inline-grid;
     border: 2px solid rgb(255, 255, 255);
     grid-template-rows: 50%;
-    grid-template-columns: 9% 22% auto;
+    grid-template-columns: 100px 25% auto auto auto;
 }
-
 #crest-img
 {
     grid-column-start: 1;
     grid-column-end: 2;
     grid-row-start: 1;
     grid-row-end: 3;
-    justify-self: stretch;
-    align-self: start;
+    justify-self: center;
+    align-self: center;
     height: 100px;
-}
-#top-text-section
-{
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start: 1;
-    grid-row-end: 2;
-    display: inline-grid;
-    grid-template-rows: 50% auto;
-    grid-template-columns: auto;
+    width: 100px;
 }
 #top-text
 {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 2;
+    grid-column-end: 3;
     margin-left: 8%;
-    grid-row-start: 2;
-    grid-row-end: 3;
     justify-self: center; 
     align-self: end; 
-    font-size: 1.4em;
+    font-size: 1.3em;
     color: rgb(255, 255, 255);
-    font-family: "Ubuntu";
+    font-family: "Cantarell";
 }
 #bottom-text
 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
     justify-self: center;
+    align-self: start;
     margin-left: 8%;
     border-top: 2px solid rgb(255, 255, 255);
     margin-top: 1%;
     color: rgb(255, 255, 255);
-    font-family: "Ubuntu";
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start: 2;
-    grid-row-end: 3;
+    font-family: "Cantarell";
     align-self: start;
+    font-size: 1.3em;
+}
+.nav-button
+{
+    background-color: #2C2F33;
+    font-family: "Cantarell";
     font-size: 1.4em;
+    color: rgb(255, 255, 255);
+    justify-self: center;
+    align-self: center;
+}
+#home-button
+{
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column-start: 3;
+    grid-column-end: 4;
+}
+
+#about-button
+{
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column-start: 4;
+    grid-column-end: 5;
+}
+
+#rush-button
+{
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column-start: 5;
+    grid-column-end: 6;
 }
